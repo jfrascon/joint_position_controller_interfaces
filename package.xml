@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="3">
-  <name>fork_position_controller_interfaces</name>
+  <name>joint_position_controller_interfaces</name>
   <version>0.1.0</version>
-  <description>Action definitions shared by the fork position controller nodes.</description>
+  <description>Action definitions shared by the joint position controller nodes.</description>
   <maintainer email="jfrascon@gmail.com">Juan Francisco Rascon Crespo</maintainer>
   <license>Apache-2.0</license>
 

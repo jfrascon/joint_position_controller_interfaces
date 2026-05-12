@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.8)
-project(fork_position_controller_interfaces)
+project(joint_position_controller_interfaces)
 
 find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "action/ForkPosition.action"
+  "action/JointPosition.action"
 )
 
 ament_export_dependencies(rosidl_default_runtime)
