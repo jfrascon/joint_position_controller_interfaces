@@ -1,20 +1,26 @@
 # Desired absolute joint position.
+# Positions use meters for prismatic joints and radians for revolute joints.
 float64 position
 ---
 # True when the server reached the requested target position within its configured tolerance.
 bool success
 
-# Last measured joint position known by the server when the goal reached one terminal state.
+# Last measured joint position known by the server when the goal enters a terminal state.
+# It uses the same unit as the goal position.
+# The value is NaN when no valid final position is available.
 float64 final_position
 
 # Human-readable explanation of the terminal state.
 string message
 ---
 # Requested absolute target position associated with this feedback message.
+# It uses the same unit as the goal position.
 float64 target_position
 
 # Latest measured joint position associated with this feedback message.
+# It uses the same unit as the goal position.
 float64 current_position
 
 # Signed position error computed as target_position - current_position.
+# It uses the same unit as the goal position.
 float64 position_error
